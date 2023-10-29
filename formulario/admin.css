@@ -1,0 +1,33 @@
+.image{
+    background-image: url(../img/fotosartistas/admi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 15%;
+}
+
+.cosito{
+    background-color:grey;
+}
+
+.boton{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form{
+    justify-content: center;
+    text-align: center;
+}
+
+.form-2{
+
+    margin: 0px 25px 25px;
+}
+.form-3{
+    margin: 0px 25px 25px;
+}
+
+h2{
+    text-align: center;
+}

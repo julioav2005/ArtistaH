@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD Example</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <form action="create_update.php" method="POST">
+            <input type="hidden" name="id" id="id">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <button type="submit">Save</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php include 'read.php'; ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
