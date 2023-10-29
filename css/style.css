@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -60,7 +60,7 @@ body {
 
 .header {
     height: 160vh !important;
-    background: url(img/pexels-danilo-arenas-12206951.jpg) no-repeat center;
+    background: url(../img/pexels-danilo-arenas-12206951.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -91,7 +91,7 @@ p {
 
 .btn:hover {
     background: none;
-    
+
 }
 
 .btn-home {
@@ -103,74 +103,4 @@ p {
     margin: 0 10px;
 }
 
-
-.content {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 85%;
-    text-align: center;
-    background: rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
-}
-
-.box-container .box {
-    height: 11rem;
-    width: 17rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
-    margin: 2rem;   
-}
-
-.box-container .box i {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #9c27b0;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
-
-.box-container .box h3 {
-    font-size: 20px;
-    color: #9c27b0;
-
-}
-
-.box-container .box p {
-    padding: 0 15px;
-    font-size: 16px;
-}
-
-
-@media (max-width: 768px) {
-
-    .title {
-        margin-bottom: 0;
-        font-size: 40px;
-    }
-
-    .sau {
-        height: 100vh;
-    }
-
-    .navbar {
-        display: none;
-    }
-   
-    
-}
+SS

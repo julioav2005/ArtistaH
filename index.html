@@ -1,85 +1,247 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Estrellas huilenses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Artistas Huilenses</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url(img/fotosartistas/admi.jpg);
+      background-size: cover;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="head">
 
-        <div class="logo">
-            <a href="#">Logo</a>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="formulario/admi.php">Artistas Huilenses</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="php/galeria.php">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="php/nosotros.php">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="php/contactanos.html">Contáctanos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="php/tablapintores.php">Pintores</a></li>
+                <li><a class="dropdown-item" href="php/tablaescritores.php">Escritores</a></li>
+                <li><a class="dropdown-item" href="php/tablacantantes.php">Compositores</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form> -->
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Conacto</a>
-            <a href="#">Productos</a>
-            <a href="#">Precio</a>
-        </nav>
+  <main>
 
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <figure>
+            <img src="img/fotosartistas/PAGINA1.jpg" alt="" title="" width="100%" height="100%">
+          </figure>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Arte cultrura y turismo, de nuestra region opita</h1>
+              <p>Obra especial para resaltar los ancestros de las familias del sur colombiano, especialmente el Huila,
+                con sus fiestas folcloricas de mitad de año.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <figure>
+            <img src="img/fotosartistas/neiva 400 años.jpg" alt="" title="" width="100%" height="100%">
+          </figure>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Historia de nuestra region del Huila</h1>
+              <p>Lucha entre indigenas y españoles, recordando la historia del Huila con el mural Neiva 400años</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <figure>
+            <img src="img/fotosartistas/cARRUSEL3N.jpg" alt="" title="" width="100%" height="100%">
+          </figure>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Rajaleñas tradicion musical del Huila</h1>
+              <p>La rajaleña es un bambuco que tiene sus origenes en los campos y zona rurales</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <header class="content header">
-        <h2 class="title">Inicio</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Ipsam necessitatibus odio quisquam reprehenderit quas, 
-             obcaecati, harum hic molestiae sequi ipsa nihil id tempore explicabo 
-            libero vero quia asperiores similique dicta.
-        </p>
 
-        <div class="btn-home">
-            <a href="#" class="btn">Saber mas</a>
-            <a href="#" class="btn">Saber mas</a>
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+
+
+
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr id="inicio" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Joaquin Garcia Borrero <span class="text-muted">Escritor Huilense</span>
+          </h2>
+          <p class="lead">Fue un poeta, sociologico, historiador, politico e ingeniero Colombiano miembro del partido
+            liberal en Colombia (Gigante Huila). Se destaco por su elocucion , preparacion, firmeza. y
+            caracter.<strong></strong>
+            .</p>
         </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <figure>
+            <img src="img/fotosartistas/Joaquin_Garcia 500.jpg" alt="" title="" width="500px" height="500px">
+          </figure>
 
-        <h2 class="title">Categorias</h2>
+        </div>
+      </div>
 
-        <div class="box-container">
+      <hr class="featurette-divider">
 
-            <div class="box">
-                <i class="fab fa-angula"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
+      <div class="row featurette">
+        <div class="col-md-7 order-md-1">
+          <h2 class="featurette-heading">Jorge Villamil Cordovez<span class="text-muted"> Compositor Huilense .</span>
+          </h2>
+          <p class="lead">Compositor, musico y poeta, Villamil le canta al diario vivir y a las cosas campesinas en
+            lenguaje sencillo <strong>Recibio una palma de oro en Hollywood, y el titulo de compositor en la americas y
+              el mundo latino entregado en 1979.(Neiva-Huila)</strong></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <figure>
+            <img src="img/fotosartistas/JORGE-VILLAMILnuvo-fotor-20231004151348.jpg" alt="" title="" width="505px"
+              height="500px">
+          </figure>
 
-            <div class="box">
-                <i class="fab fa-appl"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
 
-            <div class="box">
-                <i class="fab fa-androi"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
 
-            <div class="box">
-                <i class="fab fa-angula"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
+        </div>
+      </div>
 
-            <div class="box">
-                <i class="fab fa-appl"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
+      <hr class="featurette-divider">
 
-            <div class="box">
-                <i class="fab fa-androi"></i>
-                <h3>Lorem</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Milton Morales Grillo <span class="text-muted"> Pintor Huilense </span></h2>
+          <p class="lead">Es un pintor, escultor y gestor cultural, Colombiano. Famoso artista que fundamenta su obra en
+            el arte abstracto. Se graduo con honores en la especializacion de gestion cultural. Durantes su carreara a
+            sido merecedor de varios reconocimientos gracias a la calidad de sus obras.</p>
+        </div>
+        <div class="col-md-5">
+          <figure>
+            <img src="img/fotosartistas/milton morales-fotor-20231004145024.jpg" alt="" title="" width="500px"
+              height="500px">
+          </figure>
 
-    </header>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Ir arriba</a></p>
+    </footer>
+  </main>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
 
 </body>
+
 </html>

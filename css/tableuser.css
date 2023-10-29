@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+table {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+table,tr,td,th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+    width: 500px;
+    height: 30px;
+    background: rebeccapurple;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
